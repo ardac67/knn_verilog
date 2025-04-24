@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ardac/Documents/Arda/term2/embed/p1/project/simulation/modelsim
+vcontroller
+Z1 !s110 1745501696
+!i10b 1
+!s100 LKHiKo`k33A1RFGE9I`Yf0
+I2aVPD6<>7Dj<f>4>PO3S;1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1745498750
+8C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v
+FC:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1745501696.000000
+!s107 C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project|C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project
+Z7 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 dYiG_YaHZDI[MF9UG@MRh1
+I70a3QVdmYk:ZMBhh:6:0>3
+R2
+R0
+w1745499104
+8C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v
+FC:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project|C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v|
+!i113 1
+R5
+R6
+R7
+vtest_bench
+Z8 !s110 1745501697
+!i10b 1
+!s100 anKZJGYYzi`e?hWK^n@aI3
+I@TSic5QZ6Z^R[l4k0;h3=2
+R2
+R0
+w1745501601
+8C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v
+FC:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1745501697.000000
+!s107 C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project|C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v|
+!i113 1
+R5
+R6
+R7
+vtop
+R1
+!i10b 1
+!s100 3Ea1=<>YMFPIGC?z17A2B3
+Ih:H=Ma5EJFnA0lFYz89PX2
+R2
+R0
+w1745501678
+8C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v
+FC:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project|C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v|
+!i113 1
+R5
+R6
+R7
+vtrain_memory
+R8
+!i10b 1
+!s100 eUVldDmQX_H[6HknnUo040
+IZcnX13o_?9Lld>WKIdR9M0
+R2
+R0
+w1745496827
+8C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v
+FC:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project|C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v|
+!i113 1
+R5
+R6
+R7

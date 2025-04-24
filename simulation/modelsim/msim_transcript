@@ -1,0 +1,689 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do 1nn_embed_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:56 on Apr 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project" C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 16:34:56 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:56 on Apr 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project" C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 16:34:56 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:56 on Apr 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project" C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:34:56 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:56 on Apr 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project" C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v 
+# -- Compiling module train_memory
+# 
+# Top level modules:
+# 	train_memory
+# End time: 16:34:57 on Apr 24,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:57 on Apr 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project" C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v 
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 16:34:57 on Apr 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_bench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test_bench 
+# Start time: 16:34:57 on Apr 24,2025
+# Loading work.test_bench
+# Loading work.top
+# Loading work.controller
+# Loading work.datapath
+# Loading work.train_memory
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Cycle 5: idx=  0 | start=0 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 15: idx=  0 | start=0 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 25: idx=  0 | start=0 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 35: idx=  0 | start=0 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 45: idx=  0 | start=1 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 55: idx=  0 | start=0 | update=0 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 65: idx=  0 | start=0 | update=1 | min_dist=4294967295 | pred_label=0 | done=0
+# Cycle 75: idx=  1 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 85: idx=  1 | start=1 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 95: idx=  1 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 105: idx=  1 | start=0 | update=1 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 115: idx=  2 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 125: idx=  2 | start=1 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 135: idx=  2 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 145: idx=  2 | start=0 | update=1 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 155: idx=  3 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 165: idx=  3 | start=1 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 175: idx=  3 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 185: idx=  3 | start=0 | update=1 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 195: idx=  4 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 205: idx=  4 | start=1 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 215: idx=  4 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 225: idx=  4 | start=0 | update=1 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 235: idx=  5 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 245: idx=  5 | start=1 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 255: idx=  5 | start=0 | update=0 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 265: idx=  5 | start=0 | update=1 | min_dist=   2528236 | pred_label=0 | done=0
+# Cycle 275: idx=  6 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 285: idx=  6 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 295: idx=  6 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 305: idx=  6 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 315: idx=  7 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 325: idx=  7 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 335: idx=  7 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 345: idx=  7 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 355: idx=  8 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 365: idx=  8 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 375: idx=  8 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 385: idx=  8 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 395: idx=  9 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 405: idx=  9 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 415: idx=  9 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 425: idx=  9 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 435: idx= 10 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 445: idx= 10 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 455: idx= 10 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 465: idx= 10 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 475: idx= 11 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 485: idx= 11 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 495: idx= 11 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 505: idx= 11 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 515: idx= 12 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 525: idx= 12 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 535: idx= 12 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 545: idx= 12 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 555: idx= 13 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 565: idx= 13 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 575: idx= 13 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 585: idx= 13 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 595: idx= 14 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 605: idx= 14 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 615: idx= 14 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 625: idx= 14 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 635: idx= 15 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 645: idx= 15 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 655: idx= 15 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 665: idx= 15 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 675: idx= 16 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 685: idx= 16 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 695: idx= 16 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 705: idx= 16 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 715: idx= 17 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 725: idx= 17 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 735: idx= 17 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 745: idx= 17 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 755: idx= 18 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 765: idx= 18 | start=1 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 775: idx= 18 | start=0 | update=0 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 785: idx= 18 | start=0 | update=1 | min_dist=   2232382 | pred_label=0 | done=0
+# Cycle 795: idx= 19 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 805: idx= 19 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 815: idx= 19 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 825: idx= 19 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 835: idx= 20 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 845: idx= 20 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 855: idx= 20 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 865: idx= 20 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 875: idx= 21 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 885: idx= 21 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 895: idx= 21 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 905: idx= 21 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 915: idx= 22 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 925: idx= 22 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 935: idx= 22 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 945: idx= 22 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 955: idx= 23 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 965: idx= 23 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 975: idx= 23 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 985: idx= 23 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 995: idx= 24 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1005: idx= 24 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1015: idx= 24 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1025: idx= 24 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1035: idx= 25 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1045: idx= 25 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1055: idx= 25 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1065: idx= 25 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1075: idx= 26 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1085: idx= 26 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1095: idx= 26 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1105: idx= 26 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1115: idx= 27 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1125: idx= 27 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1135: idx= 27 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1145: idx= 27 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1155: idx= 28 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1165: idx= 28 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1175: idx= 28 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1185: idx= 28 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1195: idx= 29 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1205: idx= 29 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1215: idx= 29 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1225: idx= 29 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1235: idx= 30 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1245: idx= 30 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1255: idx= 30 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1265: idx= 30 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1275: idx= 31 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1285: idx= 31 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1295: idx= 31 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1305: idx= 31 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1315: idx= 32 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1325: idx= 32 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1335: idx= 32 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1345: idx= 32 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1355: idx= 33 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1365: idx= 33 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1375: idx= 33 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1385: idx= 33 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1395: idx= 34 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1405: idx= 34 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1415: idx= 34 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1425: idx= 34 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1435: idx= 35 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1445: idx= 35 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1455: idx= 35 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1465: idx= 35 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1475: idx= 36 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1485: idx= 36 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1495: idx= 36 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1505: idx= 36 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1515: idx= 37 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1525: idx= 37 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1535: idx= 37 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1545: idx= 37 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1555: idx= 38 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1565: idx= 38 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1575: idx= 38 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1585: idx= 38 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1595: idx= 39 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1605: idx= 39 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1615: idx= 39 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1625: idx= 39 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1635: idx= 40 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1645: idx= 40 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1655: idx= 40 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1665: idx= 40 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1675: idx= 41 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1685: idx= 41 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1695: idx= 41 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1705: idx= 41 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1715: idx= 42 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1725: idx= 42 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1735: idx= 42 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1745: idx= 42 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1755: idx= 43 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1765: idx= 43 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1775: idx= 43 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1785: idx= 43 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1795: idx= 44 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1805: idx= 44 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1815: idx= 44 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1825: idx= 44 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1835: idx= 45 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1845: idx= 45 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1855: idx= 45 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1865: idx= 45 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1875: idx= 46 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1885: idx= 46 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1895: idx= 46 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1905: idx= 46 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1915: idx= 47 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1925: idx= 47 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1935: idx= 47 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1945: idx= 47 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1955: idx= 48 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1965: idx= 48 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1975: idx= 48 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1985: idx= 48 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 1995: idx= 49 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2005: idx= 49 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2015: idx= 49 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2025: idx= 49 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2035: idx= 50 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2045: idx= 50 | start=1 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2055: idx= 50 | start=0 | update=0 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2065: idx= 50 | start=0 | update=1 | min_dist=   2155305 | pred_label=0 | done=0
+# Cycle 2075: idx= 51 | start=0 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2085: idx= 51 | start=1 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2095: idx= 51 | start=0 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2105: idx= 51 | start=0 | update=1 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2115: idx= 52 | start=0 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2125: idx= 52 | start=1 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2135: idx= 52 | start=0 | update=0 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2145: idx= 52 | start=0 | update=1 | min_dist=    328305 | pred_label=1 | done=0
+# Cycle 2155: idx= 53 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2165: idx= 53 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2175: idx= 53 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2185: idx= 53 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2195: idx= 54 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2205: idx= 54 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2215: idx= 54 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2225: idx= 54 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2235: idx= 55 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2245: idx= 55 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2255: idx= 55 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2265: idx= 55 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2275: idx= 56 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2285: idx= 56 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2295: idx= 56 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2305: idx= 56 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2315: idx= 57 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2325: idx= 57 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2335: idx= 57 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2345: idx= 57 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2355: idx= 58 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2365: idx= 58 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2375: idx= 58 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2385: idx= 58 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2395: idx= 59 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2405: idx= 59 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2415: idx= 59 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2425: idx= 59 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2435: idx= 60 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2445: idx= 60 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2455: idx= 60 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2465: idx= 60 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2475: idx= 61 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2485: idx= 61 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2495: idx= 61 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2505: idx= 61 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2515: idx= 62 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2525: idx= 62 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2535: idx= 62 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2545: idx= 62 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2555: idx= 63 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2565: idx= 63 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2575: idx= 63 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2585: idx= 63 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2595: idx= 64 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2605: idx= 64 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2615: idx= 64 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2625: idx= 64 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2635: idx= 65 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2645: idx= 65 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2655: idx= 65 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2665: idx= 65 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2675: idx= 66 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2685: idx= 66 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2695: idx= 66 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2705: idx= 66 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2715: idx= 67 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2725: idx= 67 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2735: idx= 67 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2745: idx= 67 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2755: idx= 68 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2765: idx= 68 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2775: idx= 68 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2785: idx= 68 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2795: idx= 69 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2805: idx= 69 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2815: idx= 69 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2825: idx= 69 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2835: idx= 70 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2845: idx= 70 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2855: idx= 70 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2865: idx= 70 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2875: idx= 71 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2885: idx= 71 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2895: idx= 71 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2905: idx= 71 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2915: idx= 72 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2925: idx= 72 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2935: idx= 72 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2945: idx= 72 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2955: idx= 73 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2965: idx= 73 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2975: idx= 73 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2985: idx= 73 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 2995: idx= 74 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3005: idx= 74 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3015: idx= 74 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3025: idx= 74 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3035: idx= 75 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3045: idx= 75 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3055: idx= 75 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3065: idx= 75 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3075: idx= 76 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3085: idx= 76 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3095: idx= 76 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3105: idx= 76 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3115: idx= 77 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3125: idx= 77 | start=1 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3135: idx= 77 | start=0 | update=0 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3145: idx= 77 | start=0 | update=1 | min_dist=    276859 | pred_label=1 | done=0
+# Cycle 3155: idx= 78 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3165: idx= 78 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3175: idx= 78 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3185: idx= 78 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3195: idx= 79 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3205: idx= 79 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3215: idx= 79 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3225: idx= 79 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3235: idx= 80 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3245: idx= 80 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3255: idx= 80 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3265: idx= 80 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3275: idx= 81 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3285: idx= 81 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3295: idx= 81 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3305: idx= 81 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3315: idx= 82 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3325: idx= 82 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3335: idx= 82 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3345: idx= 82 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3355: idx= 83 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3365: idx= 83 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3375: idx= 83 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3385: idx= 83 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3395: idx= 84 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3405: idx= 84 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3415: idx= 84 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3425: idx= 84 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3435: idx= 85 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3445: idx= 85 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3455: idx= 85 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3465: idx= 85 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3475: idx= 86 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3485: idx= 86 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3495: idx= 86 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3505: idx= 86 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3515: idx= 87 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3525: idx= 87 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3535: idx= 87 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3545: idx= 87 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3555: idx= 88 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3565: idx= 88 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3575: idx= 88 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3585: idx= 88 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3595: idx= 89 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3605: idx= 89 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3615: idx= 89 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3625: idx= 89 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3635: idx= 90 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3645: idx= 90 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3655: idx= 90 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3665: idx= 90 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3675: idx= 91 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3685: idx= 91 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3695: idx= 91 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3705: idx= 91 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3715: idx= 92 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3725: idx= 92 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3735: idx= 92 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3745: idx= 92 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3755: idx= 93 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3765: idx= 93 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3775: idx= 93 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3785: idx= 93 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3795: idx= 94 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3805: idx= 94 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3815: idx= 94 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3825: idx= 94 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3835: idx= 95 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3845: idx= 95 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3855: idx= 95 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3865: idx= 95 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3875: idx= 96 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3885: idx= 96 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3895: idx= 96 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3905: idx= 96 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3915: idx= 97 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3925: idx= 97 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3935: idx= 97 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3945: idx= 97 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3955: idx= 98 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3965: idx= 98 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3975: idx= 98 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3985: idx= 98 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 3995: idx= 99 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4005: idx= 99 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4015: idx= 99 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4025: idx= 99 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4035: idx=100 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4045: idx=100 | start=1 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4055: idx=100 | start=0 | update=0 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4065: idx=100 | start=0 | update=1 | min_dist=    263291 | pred_label=1 | done=0
+# Cycle 4075: idx=101 | start=0 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4085: idx=101 | start=1 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4095: idx=101 | start=0 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4105: idx=101 | start=0 | update=1 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4115: idx=102 | start=0 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4125: idx=102 | start=1 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4135: idx=102 | start=0 | update=0 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4145: idx=102 | start=0 | update=1 | min_dist=    192973 | pred_label=2 | done=0
+# Cycle 4155: idx=103 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4165: idx=103 | start=1 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4175: idx=103 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4185: idx=103 | start=0 | update=1 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4195: idx=104 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4205: idx=104 | start=1 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4215: idx=104 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4225: idx=104 | start=0 | update=1 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4235: idx=105 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4245: idx=105 | start=1 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4255: idx=105 | start=0 | update=0 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4265: idx=105 | start=0 | update=1 | min_dist=     68711 | pred_label=2 | done=0
+# Cycle 4275: idx=106 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4285: idx=106 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4295: idx=106 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4305: idx=106 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4315: idx=107 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4325: idx=107 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4335: idx=107 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4345: idx=107 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4355: idx=108 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4365: idx=108 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4375: idx=108 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4385: idx=108 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4395: idx=109 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4405: idx=109 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4415: idx=109 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4425: idx=109 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4435: idx=110 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4445: idx=110 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4455: idx=110 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4465: idx=110 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4475: idx=111 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4485: idx=111 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4495: idx=111 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4505: idx=111 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4515: idx=112 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4525: idx=112 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4535: idx=112 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4545: idx=112 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4555: idx=113 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4565: idx=113 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4575: idx=113 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4585: idx=113 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4595: idx=114 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4605: idx=114 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4615: idx=114 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4625: idx=114 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4635: idx=115 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4645: idx=115 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4655: idx=115 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4665: idx=115 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4675: idx=116 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4685: idx=116 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4695: idx=116 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4705: idx=116 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4715: idx=117 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4725: idx=117 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4735: idx=117 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4745: idx=117 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4755: idx=118 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4765: idx=118 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4775: idx=118 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4785: idx=118 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4795: idx=119 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4805: idx=119 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4815: idx=119 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4825: idx=119 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4835: idx=120 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4845: idx=120 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4855: idx=120 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4865: idx=120 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4875: idx=121 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4885: idx=121 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4895: idx=121 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4905: idx=121 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4915: idx=122 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4925: idx=122 | start=1 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4935: idx=122 | start=0 | update=0 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4945: idx=122 | start=0 | update=1 | min_dist=      4527 | pred_label=2 | done=0
+# Cycle 4955: idx=123 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 4965: idx=123 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 4975: idx=123 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 4985: idx=123 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 4995: idx=124 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5005: idx=124 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5015: idx=124 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5025: idx=124 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5035: idx=125 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5045: idx=125 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5055: idx=125 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5065: idx=125 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5075: idx=126 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5085: idx=126 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5095: idx=126 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5105: idx=126 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5115: idx=127 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5125: idx=127 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5135: idx=127 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5145: idx=127 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5155: idx=128 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5165: idx=128 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5175: idx=128 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5185: idx=128 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5195: idx=129 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5205: idx=129 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5215: idx=129 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5225: idx=129 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5235: idx=130 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5245: idx=130 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5255: idx=130 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5265: idx=130 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5275: idx=131 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5285: idx=131 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5295: idx=131 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5305: idx=131 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5315: idx=132 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5325: idx=132 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5335: idx=132 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5345: idx=132 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5355: idx=133 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5365: idx=133 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5375: idx=133 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5385: idx=133 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5395: idx=134 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5405: idx=134 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5415: idx=134 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5425: idx=134 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5435: idx=135 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5445: idx=135 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5455: idx=135 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5465: idx=135 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5475: idx=136 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5485: idx=136 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5495: idx=136 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5505: idx=136 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5515: idx=137 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5525: idx=137 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5535: idx=137 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5545: idx=137 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5555: idx=138 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5565: idx=138 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5575: idx=138 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5585: idx=138 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5595: idx=139 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5605: idx=139 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5615: idx=139 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5625: idx=139 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5635: idx=140 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5645: idx=140 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5655: idx=140 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5665: idx=140 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5675: idx=141 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5685: idx=141 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5695: idx=141 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5705: idx=141 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5715: idx=142 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5725: idx=142 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5735: idx=142 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5745: idx=142 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5755: idx=143 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5765: idx=143 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5775: idx=143 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5785: idx=143 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5795: idx=144 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5805: idx=144 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5815: idx=144 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5825: idx=144 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5835: idx=145 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5845: idx=145 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5855: idx=145 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5865: idx=145 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5875: idx=146 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5885: idx=146 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5895: idx=146 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5905: idx=146 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5915: idx=147 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5925: idx=147 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5935: idx=147 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5945: idx=147 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5955: idx=148 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5965: idx=148 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5975: idx=148 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5985: idx=148 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 5995: idx=149 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 6005: idx=149 | start=1 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 6015: idx=149 | start=0 | update=0 | min_dist=         0 | pred_label=2 | done=0
+# Cycle 6025: idx=149 | start=0 | update=1 | min_dist=         0 | pred_label=2 | done=0
+# Final Predicted Class = 2
+# ** Note: $finish    : C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v(47)
+#    Time: 6035 ps  Iteration: 0  Instance: /test_bench
+# 1
+# Break in Module test_bench at C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v line 47
+# End time: 16:35:09 on Apr 24,2025, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0

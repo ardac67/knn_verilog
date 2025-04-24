@@ -1,0 +1,8 @@
+
+State Machine - |top|controller:ctrl|state
+Name state.UPDATE state.WAIT state.START state.IDLE state.NEXT 
+state.IDLE 0 0 0 0 0 
+state.START 0 0 1 1 0 
+state.WAIT 0 1 0 1 0 
+state.UPDATE 1 0 0 1 0 
+state.NEXT 0 0 0 1 1 

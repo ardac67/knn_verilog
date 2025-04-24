@@ -1,0 +1,43 @@
+module knn_top (
+    input clk,
+    input rst,
+    output [1:0] final_class
+);
+    wire [7:0] index;
+    wire [15:0] test_sample [3:0];
+    wire [15:0] train_sample [3:0];
+    wire [1:0] train_label;
+
+    wire start_distance, update_min;
+    wire [31:0] min_distance;
+    wire done;
+    wire [1:0] pred_label;
+
+    // Instantiate controller
+    controller ctrl (
+        .clk(clk),
+        .rst(rst),
+        .sample_index(index),
+        .start_distance(start_distance),
+        .update_min(update_min),
+        .done(done)
+    );
+
+    // Instantiate datapath
+    datapath dp (
+        .clk(clk),
+        .rst(rst),
+        .sample_index(index),
+        .test_sample(test_sample),
+        .train_sample(train_sample),
+        .train_label(train_label),
+        .start_distance(start_distance),
+        .update_min(update_min),
+        .predicted_label(pred_label),
+        .min_distance_out(min_distance)
+    );
+
+    assign final_class = pred_label;
+
+    // Memory mocking could be here
+endmodule

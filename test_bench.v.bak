@@ -1,0 +1,22 @@
+module tb_knn;
+    reg clk;
+    reg rst;
+    wire [1:0] final_class;
+
+    knn_top uut (
+        .clk(clk),
+        .rst(rst),
+        .final_class(final_class)
+    );
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // 100MHz clock
+    end
+
+    initial begin
+        rst = 1;
+        #20;
+        rst = 0;
+    end
+endmodule

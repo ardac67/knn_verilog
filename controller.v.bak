@@ -1,0 +1,30 @@
+module controller (
+    input clk,
+    input rst,
+    output reg [7:0] sample_index,
+    output reg start_distance,
+    output reg update_min,
+    output reg done
+);
+
+    reg [7:0] state;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= 0;
+            sample_index <= 0;
+            start_distance <= 0;
+            update_min <= 0;
+            done <= 0;
+        end else begin
+            start_distance <= 1;
+            update_min <= 1;
+
+            if (sample_index < 255) begin
+                sample_index <= sample_index + 1;
+            end else begin
+                done <= 1;
+            end
+        end
+    end
+endmodule
