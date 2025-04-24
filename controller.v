@@ -1,59 +1,71 @@
 module controller (
-    input clk,
-    input rst,
+    input  clk,
+    input  rst,
     output reg [7:0] sample_index,
-    output reg start_distance,
-    output reg update_min,
-    output reg done
+    output reg       start_distance,
+    output reg       update_min,
+    output reg       done
 );
 
     // State encoding
     reg [2:0] state;
-    parameter IDLE = 3'd0, START = 3'd1, WAIT = 3'd2, UPDATE = 3'd3, NEXT = 3'd4;
+    parameter
+        IDLE          = 3'd0,
+        START         = 3'd1,
+        WAIT          = 3'd2,
+        UPDATE        = 3'd3,
+        CHECK         = 3'd4,  // was NEXT’s decision logic
+        INCR          = 3'd5,  // increment sample_index
+        FINISH        = 3'd6;  // assert done
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin
-            sample_index <= 0;
-            start_distance <= 0;
-            update_min <= 0;
-            done <= 0;
-            state <= IDLE;
+            sample_index   <= 8'd0;
+            start_distance <= 1'b0;
+            update_min     <= 1'b0;
+            done           <= 1'b0;
+            state          <= IDLE;
         end else begin
+            // default de-assert control signals
+            start_distance <= 1'b0;
+            update_min     <= 1'b0;
+
             case (state)
                 IDLE: begin
-                    start_distance <= 0;
-                    update_min <= 0;
-                    if (!done) begin
-                        state <= START;
-                    end
+                    if (!done) state <= START;
                 end
 
                 START: begin
-                    start_distance <= 1;
-                    update_min <= 0;
-                    state <= WAIT;
+                    start_distance <= 1'b1;
+                    state          <= WAIT;
                 end
 
                 WAIT: begin
-                    start_distance <= 0;  // Let datapath compute distance
-                    update_min <= 0;
+                    // let datapath compute
                     state <= UPDATE;
                 end
 
                 UPDATE: begin
-                    update_min <= 1;      // Compare and maybe update
-                    state <= NEXT;
+                    update_min <= 1'b1;
+                    state      <= CHECK;
                 end
 
-                NEXT: begin
-                    update_min <= 0;
-                    if (sample_index == 8'd149) begin
-                        done <= 1;
-                        state <= IDLE;
-                    end else begin
-                        sample_index <= sample_index + 1;
-                        state <= START;
-                    end
+                CHECK: begin
+                    // decide whether we’ve reached the last sample
+                    if (sample_index == 8'd149)
+                        state <= FINISH;
+                    else
+                        state <= INCR;
+                end
+
+                INCR: begin
+                    sample_index <= sample_index + 8'd1;
+                    state        <= START;
+                end
+
+                FINISH: begin
+                    done  <= 1'b1;
+                    state <= IDLE;
                 end
 
                 default: state <= IDLE;
