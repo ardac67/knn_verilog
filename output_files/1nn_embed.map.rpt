@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 1nn_embed
-Thu Apr 24 16:35:34 2025
+Thu May 01 16:17:36 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,22 +13,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis DSP Block Usage Summary
- 10. State Machine - |top|controller:ctrl|state
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Registers Packed Into Inferred Megafunctions
- 15. Source assignments for train_memory:mem|altsyncram:label_mem_rtl_0|altsyncram_hrd1:auto_generated
- 16. Parameter Settings for User Entity Instance: controller:ctrl
- 17. Parameter Settings for Inferred Entity Instance: train_memory:mem|altsyncram:label_mem_rtl_0
- 18. altsyncram Parameter Settings by Entity Instance
- 19. Port Connectivity Checks: "datapath:dp"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |top|controller:ctrl|state
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 14. Parameter Settings for User Entity Instance: controller:ctrl
+ 15. Parameter Settings for User Entity Instance: datapath:dp
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -54,17 +49,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 24 16:35:34 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 01 16:17:36 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; 1nn_embed                                   ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 81                                          ;
-; Total pins                      ; 49                                          ;
+; Total registers                 ; 95                                          ;
+; Total pins                      ; 81                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 512                                         ;
-; Total DSP Blocks                ; 8                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -174,31 +169,27 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                     ;
-+-------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                         ; Library ;
-+-------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; datapath.v                                      ; yes             ; User Verilog HDL File                                 ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v                                      ;         ;
-; controller.v                                    ; yes             ; User Verilog HDL File                                 ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v                                    ;         ;
-; top.v                                           ; yes             ; User Verilog HDL File                                 ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v                                           ;         ;
-; train_memory.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v                                  ;         ;
-; altsyncram.tdf                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                ;         ;
-; stratix_ram_block.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                         ;         ;
-; lpm_mux.inc                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                   ;         ;
-; lpm_decode.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                ;         ;
-; aglobal181.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                ;         ;
-; a_rdenreg.inc                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                 ;         ;
-; altrom.inc                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                    ;         ;
-; altram.inc                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                    ;         ;
-; altdpram.inc                                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                  ;         ;
-; db/altsyncram_hrd1.tdf                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/db/altsyncram_hrd1.tdf                          ;         ;
-; db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif ;         ;
-+-------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+---------------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+---------------------------------------------+-----------------------------------------------------------------------+---------+
+; datapath.v                       ; yes             ; User Verilog HDL File                       ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v       ;         ;
+; controller.v                     ; yes             ; User Verilog HDL File                       ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v     ;         ;
+; top.v                            ; yes             ; User Verilog HDL File                       ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v            ;         ;
+; train_labels.hex                 ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_labels.hex ;         ;
+; train_data.hex                   ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_data.hex   ;         ;
++----------------------------------+-----------------+---------------------------------------------+-----------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -206,79 +197,69 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 111       ;
+; Estimate of Logic utilization (ALMs needed) ; 207       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 198       ;
+; Combinational ALUT usage for logic          ; 273       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 23        ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 10        ;
-;     -- <=3 input functions                  ; 163       ;
+;     -- 6 input functions                    ; 137       ;
+;     -- 5 input functions                    ; 15        ;
+;     -- 4 input functions                    ; 24        ;
+;     -- <=3 input functions                  ; 97        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 81        ;
+; Dedicated logic registers                   ; 95        ;
 ;                                             ;           ;
-; I/O pins                                    ; 49        ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 512       ;
+; I/O pins                                    ; 81        ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 8         ;
+; Total DSP Blocks                            ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 83        ;
-; Total fan-out                               ; 1061      ;
-; Average fan-out                             ; 2.74      ;
+; Maximum fan-out                             ; 95        ;
+; Total fan-out                               ; 1669      ;
+; Average fan-out                             ; 3.14      ;
 +---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
-; |top                                      ; 198 (0)             ; 81 (0)                    ; 512               ; 8          ; 49   ; 0            ; |top                                                                            ; top             ; work         ;
-;    |controller:ctrl|                      ; 14 (14)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |top|controller:ctrl                                                            ; controller      ; work         ;
-;    |datapath:dp|                          ; 184 (184)           ; 66 (66)                   ; 0                 ; 8          ; 0    ; 0            ; |top|datapath:dp                                                                ; datapath        ; work         ;
-;    |train_memory:mem|                     ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |top|train_memory:mem                                                           ; train_memory    ; work         ;
-;       |altsyncram:label_mem_rtl_0|        ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |top|train_memory:mem|altsyncram:label_mem_rtl_0                                ; altsyncram      ; work         ;
-;          |altsyncram_hrd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |top|train_memory:mem|altsyncram:label_mem_rtl_0|altsyncram_hrd1:auto_generated ; altsyncram_hrd1 ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; |top                       ; 273 (0)             ; 95 (0)                    ; 0                 ; 1          ; 81   ; 0            ; |top                 ; top         ; work         ;
+;    |controller:ctrl|       ; 14 (14)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |top|controller:ctrl ; controller  ; work         ;
+;    |datapath:dp|           ; 259 (259)           ; 81 (81)                   ; 0                 ; 1          ; 0    ; 0            ; |top|datapath:dp     ; datapath    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                         ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
-; Name                                                                                  ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                             ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
-; train_memory:mem|altsyncram:label_mem_rtl_0|altsyncram_hrd1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 2            ; --           ; --           ; 512  ; db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Two Independent 18x18           ; 4           ;
-; Sum of two 18x18                ; 4           ;
-; Total number of DSP blocks      ; 8           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 12          ;
-+---------------------------------+-------------+
++----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary ;
++-------------------------------+--------------+
+; Statistic                     ; Number Used  ;
++-------------------------------+--------------+
+; Independent 18x18 plus 36     ; 1            ;
+; Total number of DSP blocks    ; 1            ;
+;                               ;              ;
+; Fixed Point Signed Multiplier ; 1            ;
++-------------------------------+--------------+
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------+
-; State Machine - |top|controller:ctrl|state                                       ;
-+--------------+--------------+------------+-------------+------------+------------+
-; Name         ; state.UPDATE ; state.WAIT ; state.START ; state.IDLE ; state.NEXT ;
-+--------------+--------------+------------+-------------+------------+------------+
-; state.IDLE   ; 0            ; 0          ; 0           ; 0          ; 0          ;
-; state.START  ; 0            ; 0          ; 1           ; 1          ; 0          ;
-; state.WAIT   ; 0            ; 1          ; 0           ; 1          ; 0          ;
-; state.UPDATE ; 1            ; 0          ; 0           ; 1          ; 0          ;
-; state.NEXT   ; 0            ; 0          ; 0           ; 1          ; 1          ;
-+--------------+--------------+------------+-------------+------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|controller:ctrl|state                                                                                                                                         ;
++-----------------+--------------+---------------+----------------+-----------------+---------------+--------------+-----------------+--------------+-----------------+--------------+
+; Name            ; state.S_DONE ; state.S_INC_I ; state.S_UPDATE ; state.S_COMPARE ; state.S_INC_J ; state.S_CALC ; state.S_CHECK_J ; state.S_INIT ; state.S_CHECK_I ; state.S_IDLE ;
++-----------------+--------------+---------------+----------------+-----------------+---------------+--------------+-----------------+--------------+-----------------+--------------+
+; state.S_IDLE    ; 0            ; 0             ; 0              ; 0               ; 0             ; 0            ; 0               ; 0            ; 0               ; 0            ;
+; state.S_CHECK_I ; 0            ; 0             ; 0              ; 0               ; 0             ; 0            ; 0               ; 0            ; 1               ; 1            ;
+; state.S_INIT    ; 0            ; 0             ; 0              ; 0               ; 0             ; 0            ; 0               ; 1            ; 0               ; 1            ;
+; state.S_CHECK_J ; 0            ; 0             ; 0              ; 0               ; 0             ; 0            ; 1               ; 0            ; 0               ; 1            ;
+; state.S_CALC    ; 0            ; 0             ; 0              ; 0               ; 0             ; 1            ; 0               ; 0            ; 0               ; 1            ;
+; state.S_INC_J   ; 0            ; 0             ; 0              ; 0               ; 1             ; 0            ; 0               ; 0            ; 0               ; 1            ;
+; state.S_COMPARE ; 0            ; 0             ; 0              ; 1               ; 0             ; 0            ; 0               ; 0            ; 0               ; 1            ;
+; state.S_UPDATE  ; 0            ; 0             ; 1              ; 0               ; 0             ; 0            ; 0               ; 0            ; 0               ; 1            ;
+; state.S_INC_I   ; 0            ; 1             ; 0              ; 0               ; 0             ; 0            ; 0               ; 0            ; 0               ; 1            ;
+; state.S_DONE    ; 1            ; 0             ; 0              ; 0               ; 0             ; 0            ; 0               ; 0            ; 0               ; 1            ;
++-----------------+--------------+---------------+----------------+-----------------+---------------+--------------+-----------------+--------------+-----------------+--------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -286,11 +267,12 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; train_memory:mem|features_flat[0..63]  ; Stuck at GND due to stuck port data_in ;
-; controller:ctrl|state~9                ; Lost fanout                            ;
-; controller:ctrl|state~10               ; Lost fanout                            ;
-; controller:ctrl|update_min             ; Merged with controller:ctrl|state.NEXT ;
-; Total Number of Removed Registers = 67 ;                                        ;
+; datapath:dp|predicted_class[2..7]      ; Stuck at GND due to stuck port data_in ;
+; controller:ctrl|state~2                ; Lost fanout                            ;
+; controller:ctrl|state~3                ; Lost fanout                            ;
+; controller:ctrl|state~4                ; Lost fanout                            ;
+; controller:ctrl|state~5                ; Lost fanout                            ;
+; Total Number of Removed Registers = 10 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -299,73 +281,42 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 81    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 95    ;
+; Number of registers using Synchronous Clear  ; 49    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 81    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Clock Enable       ; 80    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------+
-; Inverted Register Statistics                      ;
-+-----------------------------------------+---------+
-; Inverted Register                       ; Fan out ;
-+-----------------------------------------+---------+
-; datapath:dp|min_distance_out[0]         ; 2       ;
-; datapath:dp|min_distance_out[1]         ; 2       ;
-; datapath:dp|min_distance_out[2]         ; 3       ;
-; datapath:dp|min_distance_out[3]         ; 3       ;
-; datapath:dp|min_distance_out[4]         ; 3       ;
-; datapath:dp|min_distance_out[5]         ; 3       ;
-; datapath:dp|min_distance_out[6]         ; 3       ;
-; datapath:dp|min_distance_out[7]         ; 3       ;
-; datapath:dp|min_distance_out[8]         ; 3       ;
-; datapath:dp|min_distance_out[9]         ; 3       ;
-; datapath:dp|min_distance_out[10]        ; 3       ;
-; datapath:dp|min_distance_out[11]        ; 3       ;
-; datapath:dp|min_distance_out[12]        ; 3       ;
-; datapath:dp|min_distance_out[13]        ; 3       ;
-; datapath:dp|min_distance_out[14]        ; 3       ;
-; datapath:dp|min_distance_out[15]        ; 3       ;
-; datapath:dp|min_distance_out[16]        ; 3       ;
-; datapath:dp|min_distance_out[17]        ; 3       ;
-; datapath:dp|min_distance_out[18]        ; 4       ;
-; datapath:dp|min_distance_out[19]        ; 3       ;
-; datapath:dp|min_distance_out[20]        ; 3       ;
-; datapath:dp|min_distance_out[21]        ; 3       ;
-; datapath:dp|min_distance_out[22]        ; 3       ;
-; datapath:dp|min_distance_out[23]        ; 3       ;
-; datapath:dp|min_distance_out[24]        ; 3       ;
-; datapath:dp|min_distance_out[25]        ; 4       ;
-; datapath:dp|min_distance_out[26]        ; 3       ;
-; datapath:dp|min_distance_out[27]        ; 3       ;
-; datapath:dp|min_distance_out[28]        ; 3       ;
-; datapath:dp|min_distance_out[29]        ; 3       ;
-; datapath:dp|min_distance_out[30]        ; 3       ;
-; datapath:dp|min_distance_out[31]        ; 3       ;
-; Total number of inverted registers = 32 ;         ;
-+-----------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |top|datapath:dp|min_distance[18]   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|datapath:dp|predicted_class[1] ;
+; 4:1                ; 34 bits   ; 68 LEs        ; 0 LEs                ; 68 LEs                 ; Yes        ; |top|datapath:dp|distance[28]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|datapath:dp|j[2]               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|datapath:dp|i[2]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|controller:ctrl|state          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top|datapath:dp|Mux9               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                          ;
-+-----------------------------+----------------------------------+------+
-; Register Name               ; Megafunction                     ; Type ;
-+-----------------------------+----------------------------------+------+
-; train_memory:mem|label[0,1] ; train_memory:mem|label_mem_rtl_0 ; RAM  ;
-+-----------------------------+----------------------------------+------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Source assignments for train_memory:mem|altsyncram:label_mem_rtl_0|altsyncram_hrd1:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------+
-; Assignment                      ; Value              ; From ; To                                  ;
-+---------------------------------+--------------------+------+-------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
-+---------------------------------+--------------------+------+-------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; TRAIN_SIZE     ; 150   ; Signed Integer                             ;
+; FEATURE_COUNT  ; 4     ; Signed Integer                             ;
+; DATA_WIDTH     ; 16    ; Signed Integer                             ;
+; LABEL_WIDTH    ; 8     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------+
@@ -373,126 +324,23 @@ Encoding Type:  One-Hot
 +----------------+-------+-------------------------------------+
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
-; IDLE           ; 000   ; Unsigned Binary                     ;
-; START          ; 001   ; Unsigned Binary                     ;
-; WAIT           ; 010   ; Unsigned Binary                     ;
-; UPDATE         ; 011   ; Unsigned Binary                     ;
-; NEXT           ; 100   ; Unsigned Binary                     ;
+; TRAIN_SIZE     ; 150   ; Signed Integer                      ;
+; FEATURE_COUNT  ; 4     ; Signed Integer                      ;
 +----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: train_memory:mem|altsyncram:label_mem_rtl_0          ;
-+------------------------------------+-------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                           ; Type           ;
-+------------------------------------+-------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                               ; Untyped        ;
-; OPERATION_MODE                     ; ROM                                             ; Untyped        ;
-; WIDTH_A                            ; 2                                               ; Untyped        ;
-; WIDTHAD_A                          ; 8                                               ; Untyped        ;
-; NUMWORDS_A                         ; 256                                             ; Untyped        ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                            ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped        ;
-; WIDTH_B                            ; 1                                               ; Untyped        ;
-; WIDTHAD_B                          ; 1                                               ; Untyped        ;
-; NUMWORDS_B                         ; 1                                               ; Untyped        ;
-; INDATA_REG_B                       ; CLOCK1                                          ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                          ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                          ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                    ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                            ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped        ;
-; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped        ;
-; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped        ;
-; BYTE_SIZE                          ; 8                                               ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
-; INIT_FILE                          ; db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                               ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                           ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone V                                       ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_hrd1                                 ; Untyped        ;
-+------------------------------------+-------------------------------------------------+----------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; TRAIN_SIZE     ; 150   ; Signed Integer                  ;
+; FEATURE_COUNT  ; 4     ; Signed Integer                  ;
+; DATA_WIDTH     ; 16    ; Signed Integer                  ;
+; LABEL_WIDTH    ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                        ;
-+-------------------------------------------+---------------------------------------------+
-; Name                                      ; Value                                       ;
-+-------------------------------------------+---------------------------------------------+
-; Number of entity instances                ; 1                                           ;
-; Entity Instance                           ; train_memory:mem|altsyncram:label_mem_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                         ;
-;     -- WIDTH_A                            ; 2                                           ;
-;     -- NUMWORDS_A                         ; 256                                         ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
-;     -- WIDTH_B                            ; 1                                           ;
-;     -- NUMWORDS_B                         ; 1                                           ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
-+-------------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:dp"                    ;
-+--------------------------+-------+----------+--------------+
-; Port                     ; Type  ; Severity ; Details      ;
-+--------------------------+-------+----------+--------------+
-; test_sample_flat[42..41] ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[37..36] ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[33..32] ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[23..22] ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[19..18] ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[10..7]  ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[5..4]   ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[1..0]   ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[63..58] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[56..43] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[35..34] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[31..26] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[21..20] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[15..11] ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[3..2]   ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[57]     ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[40]     ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[39]     ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[38]     ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[25]     ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[24]     ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[17]     ; Input ; Info     ; Stuck at GND ;
-; test_sample_flat[16]     ; Input ; Info     ; Stuck at VCC ;
-; test_sample_flat[6]      ; Input ; Info     ; Stuck at GND ;
-+--------------------------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -500,29 +348,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 81                          ;
-;     CLR               ; 8                           ;
-;     ENA CLR           ; 73                          ;
-; arriav_lcell_comb     ; 230                         ;
-;     arith             ; 39                          ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 33                          ;
-;     normal            ; 113                         ;
-;         1 data inputs ; 64                          ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 10                          ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 23                          ;
-;     shared            ; 78                          ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 42                          ;
-; arriav_mac            ; 8                           ;
-; boundary_port         ; 49                          ;
-; stratixv_ram_block    ; 2                           ;
+; arriav_ff             ; 95                          ;
+;     ENA               ; 36                          ;
+;     ENA SCLR          ; 44                          ;
+;     SCLR              ; 5                           ;
+;     plain             ; 10                          ;
+; arriav_lcell_comb     ; 274                         ;
+;     arith             ; 33                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 9                           ;
+;         5 data inputs ; 1                           ;
+;     normal            ; 241                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 46                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 24                          ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 137                         ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 81                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.62                        ;
+; Max LUT depth         ; 7.40                        ;
+; Average LUT depth     ; 3.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -531,7 +380,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -541,7 +390,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 24 16:35:26 2025
+    Info: Processing started: Thu May 01 16:17:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 1nn_embed -c 1nn_embed
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -550,69 +399,50 @@ Info (12021): Found 1 design units, including 1 entities, in source file datapat
 Info (12021): Found 1 design units, including 1 entities, in source file controller.v
     Info (12023): Found entity 1: controller File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: top File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 1
+    Info (12023): Found entity 1: top File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file test_bench.v
-    Info (12023): Found entity 1: test_bench File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v Line: 1
+    Info (12023): Found entity 1: test_bench File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file train_memory.v
     Info (12023): Found entity 1: train_memory File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "controller" for hierarchy "controller:ctrl" File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 36
-Warning (10230): Verilog HDL assignment warning at controller.v(54): truncated value with size 32 to match size of target (8) File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v Line: 54
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 50
-Info (12128): Elaborating entity "train_memory" for hierarchy "train_memory:mem" File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 58
-Warning (10855): Verilog HDL warning at train_memory.v(11): initial value for variable data_mem should be constant File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 11
-Warning (10030): Net "data_mem" at train_memory.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 8
-Warning (10030): Net "label_mem.data_a" at train_memory.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 9
-Warning (10030): Net "label_mem.waddr_a" at train_memory.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 9
-Warning (10030): Net "label_mem.we_a" at train_memory.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v Line: 9
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "data_mem" into its bus
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "train_memory:mem|label_mem_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to ROM
-        Info (286033): Parameter WIDTH_A set to 2
-        Info (286033): Parameter WIDTHAD_A set to 8
-        Info (286033): Parameter NUMWORDS_A set to 256
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
-        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
-        Info (286033): Parameter INDATA_ACLR_A set to NONE
-        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif
-Info (12130): Elaborated megafunction instantiation "train_memory:mem|altsyncram:label_mem_rtl_0"
-Info (12133): Instantiated megafunction "train_memory:mem|altsyncram:label_mem_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
-    Info (12134): Parameter "WIDTH_A" = "2"
-    Info (12134): Parameter "WIDTHAD_A" = "8"
-    Info (12134): Parameter "NUMWORDS_A" = "256"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/1nn_embed.ram0_train_memory_c7ab73e6.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hrd1.tdf
-    Info (12023): Found entity 1: altsyncram_hrd1 File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/db/altsyncram_hrd1.tdf Line: 27
+Info (12128): Elaborating entity "controller" for hierarchy "controller:ctrl" File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 44
+Warning (10270): Verilog HDL Case Statement warning at controller.v(87): incomplete case statement has no default case item File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v Line: 87
+Info (10264): Verilog HDL Case Statement information at controller.v(87): all case item expressions in this case statement are onehot File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v Line: 87
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 69
+Warning (10230): Verilog HDL assignment warning at datapath.v(35): truncated value with size 3 to match size of target (2) File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 35
+Warning (10230): Verilog HDL assignment warning at datapath.v(51): truncated value with size 32 to match size of target (10) File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 51
+Warning (10230): Verilog HDL assignment warning at datapath.v(81): truncated value with size 32 to match size of target (8) File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 81
+Warning (10230): Verilog HDL assignment warning at datapath.v(84): truncated value with size 32 to match size of target (3) File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 84
+Warning (10030): Net "train_data_mem.data_a" at datapath.v(42) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 42
+Warning (10030): Net "train_data_mem.waddr_a" at datapath.v(42) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 42
+Warning (10030): Net "train_label_mem.data_a" at datapath.v(43) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 43
+Warning (10030): Net "train_label_mem.waddr_a" at datapath.v(43) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 43
+Warning (10030): Net "train_data_mem.we_a" at datapath.v(42) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 42
+Warning (10030): Net "train_label_mem.we_a" at datapath.v(43) has no driver or initial value, using a default initial value '0' File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 43
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "datapath:dp|train_data_mem" is uninferred due to asynchronous read logic File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v Line: 42
+Critical Warning (127005): Memory depth (1024) in the design file differs from memory depth (600) in the Memory Initialization File "C:/Users/ardac/Documents/Arda/term2/embed/p1/project/db/1nn_embed.ram0_datapath_4b232d2b.hdl.mif" -- setting initial value for remaining addresses to 0
+Critical Warning (127005): Memory depth (256) in the design file differs from memory depth (150) in the Memory Initialization File "C:/Users/ardac/Documents/Arda/term2/embed/p1/project/db/1nn_embed.ram1_datapath_4b232d2b.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "predicted_class[2]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
+    Warning (13410): Pin "predicted_class[3]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
+    Warning (13410): Pin "predicted_class[4]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
+    Warning (13410): Pin "predicted_class[5]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
+    Warning (13410): Pin "predicted_class[6]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
+    Warning (13410): Pin "predicted_class[7]" is stuck at GND File: C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/ardac/Documents/Arda/term2/embed/p1/project/output_files/1nn_embed.map.smsg
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 262 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 47 output pins
-    Info (21061): Implemented 203 logic cells
-    Info (21064): Implemented 2 RAM segments
-    Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Thu Apr 24 16:35:34 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/ardac/Documents/Arda/term2/embed/p1/project/output_files/1nn_embed.map.smsg.
+Info (21057): Implemented 390 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 308 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Thu May 01 16:17:36 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
 
 

@@ -1,8 +1,13 @@
 
 State Machine - |top|controller:ctrl|state
-Name state.UPDATE state.WAIT state.START state.IDLE state.NEXT 
-state.IDLE 0 0 0 0 0 
-state.START 0 0 1 1 0 
-state.WAIT 0 1 0 1 0 
-state.UPDATE 1 0 0 1 0 
-state.NEXT 0 0 0 1 1 
+Name state.S_DONE state.S_INC_I state.S_UPDATE state.S_COMPARE state.S_INC_J state.S_CALC state.S_CHECK_J state.S_INIT state.S_CHECK_I state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 0 0 0 
+state.S_CHECK_I 0 0 0 0 0 0 0 0 1 1 
+state.S_INIT 0 0 0 0 0 0 0 1 0 1 
+state.S_CHECK_J 0 0 0 0 0 0 1 0 0 1 
+state.S_CALC 0 0 0 0 0 1 0 0 0 1 
+state.S_INC_J 0 0 0 0 1 0 0 0 0 1 
+state.S_COMPARE 0 0 0 1 0 0 0 0 0 1 
+state.S_UPDATE 0 0 1 0 0 0 0 0 0 1 
+state.S_INC_I 0 1 0 0 0 0 0 0 0 1 
+state.S_DONE 1 0 0 0 0 0 0 0 0 1 

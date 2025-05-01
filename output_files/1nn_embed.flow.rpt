@@ -1,5 +1,5 @@
 Flow report for 1nn_embed
-Thu Apr 24 16:35:34 2025
+Thu May 01 16:17:36 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 24 16:35:34 2025       ;
+; Flow Status                     ; Successful - Thu May 01 16:17:36 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; 1nn_embed                                   ;
 ; Top-level Entity Name           ; top                                         ;
@@ -48,11 +48,11 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 81                                          ;
-; Total pins                      ; 49                                          ;
+; Total registers                 ; 95                                          ;
+; Total pins                      ; 81                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 512                                         ;
-; Total DSP Blocks                ; 8                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/24/2025 16:35:26 ;
+; Start date & time ; 05/01/2025 16:17:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 1nn_embed           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 215766721362054.174550172609504        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 215766721362054.174610544543756        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; test_bench     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_bench                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -105,8 +105,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4880 MB             ; 00:00:16                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4887 MB             ; 00:00:19                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

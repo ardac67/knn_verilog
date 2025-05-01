@@ -5,10 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/controller.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/top.v}
-vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/train_memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/datapath.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/ardac/Documents/Arda/term2/embed/p1/project {C:/Users/ardac/Documents/Arda/term2/embed/p1/project/test_bench.v}
 
